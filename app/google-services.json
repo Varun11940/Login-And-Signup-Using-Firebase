@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "843012218054",
+    "project_id": "login-and-signup-with-fi-c9316",
+    "storage_bucket": "login-and-signup-with-fi-c9316.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843012218054:android:de484a571cdaa4d50c0bc7",
+        "android_client_info": {
+          "package_name": "com.lcwd.loginandsignupwithfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK1Zjuac2cwof3YyOEkuaees54DMxgCp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

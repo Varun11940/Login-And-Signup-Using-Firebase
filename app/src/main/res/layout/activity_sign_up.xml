@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_up_vector"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="222dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/kurale"
+        android:text="Sign-Up"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="17.5dp"
+        android:background="@drawable/edittextshape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Your E-mail"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="17.5dp"
+        android:background="@drawable/edittextshape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextshape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Repeat-Password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPassword"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/repeatPassword"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextshape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/signUpButtonColor"
+        android:fontFamily="@font/kurale"
+        android:text="Sign-In"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/register_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/loginButtonColor"
+        android:fontFamily="@font/kurale"
+        android:text="Register"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/signInButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
